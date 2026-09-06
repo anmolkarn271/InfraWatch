@@ -1,25 +1,39 @@
 #!/bin/bash
 
-echo "================================="
-echo "       INFRAWATCH MONITOR"
-echo "================================="
-echo
-echo "Hostname: $(hostname)"
-echo "Date: $(date)"
-echo "Uptime: $(uptime -p)"
+# ==========================================
+# InfraWatch - Linux Infrastructure Monitor
+# ==========================================
+
+echo "=========================================="
+echo "          INFRAWATCH MONITOR"
+echo "=========================================="
+
+echo "Hostname : $(hostname)"
+echo "Date     : $(date)"
+echo "Uptime   : $(uptime -p)"
 
 echo
-echo "CPU:"
+echo "---------- CPU USAGE ----------"
 top -bn1 | grep "Cpu(s)"
 
 echo
-echo "Memory:"
+echo "---------- MEMORY ----------"
 free -h
 
 echo
-echo "Disk:"
+echo "---------- DISK ----------"
 df -h /
 
 echo
-echo "Network:"
+echo "---------- PROCESSES ----------"
+ps aux --sort=-%cpu | head -6
+
+echo
+echo "---------- NETWORK ----------"
 ip -br addr
+
+echo
+echo "=========================================="
+echo "          MONITORING COMPLETE"
+echo "=========================================="
+
