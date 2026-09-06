@@ -1,0 +1,25 @@
+==========================================
+             INFRAWATCH REPORT
+==========================================
+Hostname       : DESKTOP-RH01BHG
+Timestamp      : 2026-09-06 06:40:00
+Status         : HEALTHY
+
+CPU Usage      : 3%
+RAM Usage      : 19%
+Disk Usage     : 1%
+Load Average   : 0.00, 0.00, 0.00
+Uptime         : up 2 hours, 3 minutes
+
+Top Processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+lenovo      3047  300  0.1   8292  4308 ?        R    06:40   0:00 ps aux --sort=-%cpu
+root        3020 14.0  0.1   6964  4072 ?        S    06:40   0:00 /usr/sbin/CRON -f -P
+lenovo      3022  2.5  0.1   4760  3496 ?        S    06:40   0:00 /bin/bash /home/lenovo/InfraWatch/scripts/monitor.sh
+lenovo      3021  2.3  0.0   2808  1852 ?        Ss   06:40   0:00 /bin/sh -c /home/lenovo/InfraWatch/scripts/monitor.sh >> /home/lenovo/InfraWatch/logs/cron.log 2>&1
+root         188  0.1  1.4 2368184 39316 ?       Ssl  04:36   0:11 /usr/lib/snapd/snapd
+
+Network:
+lo               UNKNOWN        127.0.0.1/8 10.255.255.254/32 ::1/128 
+eth0             UP             172.20.162.104/20 fe80::215:5dff:fea0:9b0f/64 
+==========================================

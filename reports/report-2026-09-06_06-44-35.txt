@@ -1,0 +1,25 @@
+==========================================
+             INFRAWATCH REPORT
+==========================================
+Hostname       : DESKTOP-RH01BHG
+Timestamp      : 2026-09-06 06:44:35
+Status         : HEALTHY
+
+CPU Usage      : 1%
+RAM Usage      : 19%
+Disk Usage     : 1%
+Load Average   : 0.00, 0.00, 0.00
+Uptime         : up 2 hours, 7 minutes
+
+Top Processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+lenovo      3223  100  0.1   8292  4312 ?        R    06:44   0:00 ps aux --sort=-%cpu
+lenovo      3198  6.6  0.1   4760  3524 ?        Ss   06:44   0:00 /bin/bash /home/lenovo/InfraWatch/scripts/monitor.sh
+root        3196  3.1  0.2  14656  6184 pts/2    S+   06:44   0:00 systemctl start infrawatch
+root         188  0.1  1.4 2368184 39204 ?       Ssl  04:36   0:11 /usr/lib/snapd/snapd
+root          93  0.1  0.2  25812  7240 ?        Ss   04:36   0:10 /usr/lib/systemd/systemd-udevd
+
+Network:
+lo               UNKNOWN        127.0.0.1/8 10.255.255.254/32 ::1/128 
+eth0             UP             172.20.162.104/20 fe80::215:5dff:fea0:9b0f/64 
+==========================================
